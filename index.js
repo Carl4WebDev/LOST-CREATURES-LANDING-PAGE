@@ -37,3 +37,8 @@ contactsButton.addEventListener("click", function(){
     }
 
 })
+
+function insideAlbum () {
+
+    
+}

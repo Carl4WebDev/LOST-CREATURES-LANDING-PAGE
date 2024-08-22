@@ -14,12 +14,12 @@ body{
     /* border: 3px solid white; */
 }
 .icons:hover{
-    height: 50px;
-    width:50px;
+    height: 35px;
+    width:35px;
     color: grey;
     border: 1px solid white;
     border-radius: 50%;
-    padding: 2px;
+    padding: 1px;
     transform: rotate(10deg);
     transition: opacity 1s ease, transform 1s ease;
 }
@@ -42,18 +42,31 @@ body{
     transition: opacity 1s ease, transform 1s ease;
 }
 
-.button-component{
-    display: flex;
+.button-component-album{
+    /* display: flex; */
+    /* justify-content: center; */
     padding: 10px;
     position: absolute;
     top: 10%;
-    height: 90%;
+    height: 100vh;
     width: 90%;
     background-color: black;
 
     border: 2px solid white;
     border-radius: 25px;
 }
+.button-component-contacts{
+    padding: 10px;
+    position: absolute;
+    top: 10%;
+    height: auto;
+    width: 90%;
+    background-color: black;
+
+    border: 2px solid white;
+    border-radius: 25px;
+}
+
 .hidden-album{
     display: none;
 }
@@ -71,4 +84,46 @@ header {
     font-size:15px;
     font-weight: bold;
     margin: 10px;
+}
+
+
+.album-container {
+    height: 250px;
+    width:250px;
+    border-radius: 25px;
+    border:2px solid white;
+}
+.album-container img {
+    height: 235px;
+    width: 235px;
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.album-container p {
+    display:flex;
+    justify-content: center;
+
+    position: relative;
+    bottom: 30px;
+    font-weight: bold;
+    font-size: 20px;
+}
+.song-container{
+    border: 2px solid white;
+    border-radius: 25px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-weight: bold;
+}
+
+
+.disable{
+    background-color: black;
+    cursor: not-allowed;
+    /* pointer-events: none; */
 }
